@@ -1,9 +1,15 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
-
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -22,10 +28,57 @@ body {
 }
 
 .unicorn {
+    position: relative;
+}
+.unicorn-image {
     position: absolute;
     top: 0;
     left: -200px;
     z-index: 101;
     width: 100%;
-    max-width:200px;
+    max-width: 200px;
+}
+.doge {
+    height: 600px;
+}
+.doge img {
+    max-width: 100%
+}
+.doge .dogespy {
+    position: fixed;
+    left: 30px;
+    bottom: -200px;
+}
+.doge .doge1 {
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+.doge .doger {
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+.doge .dogeb {
+    max-width: 400px;
+    position: absolute;
+    left: 275px;
+    top: 225px;
+    -webkit-transition: all 1.0s ease-in-out;
+    -moz-transition:    all 1.0s ease-in-out;
+    -o-transition:      all 1.0s ease-in-out;
+    transition:         all 1.0s ease-in-out;
+}
+.doge .dogeb.ohhai {
+    top: 200px;
+}
+.doge .column {
+    float: left;
+    display: block;
+}
+.doge .left {
+    position: relative;
+}
+.doge .content {
+    margin: 0 0 0 280px;
 }
