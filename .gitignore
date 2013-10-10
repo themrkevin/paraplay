@@ -6,3 +6,5 @@ app/bower_components
 .DS_Store
 .bowerrc
 .jushintrc
+.editorconfig
+.gitattributes
