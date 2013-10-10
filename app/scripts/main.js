@@ -1,3 +1,6 @@
+window.onload = function() {
+	classy(document.body);
+}
 window.onscroll = function() {
 	paraplay('.background','top',0.2);
 	// unicornTest();
@@ -19,8 +22,6 @@ function doge() {
 		dogeR = document.querySelector('.doger'),
 		dogeB = document.querySelector('.dogeb');
 
-	var dogeBClasses = dogeB.className;
-
 	dogeSpy.style.bottom = (-(scrolled) - 200) + 'px';
 
 	if(dogeTop - scrolled > 0) {
@@ -34,4 +35,11 @@ function doge() {
 			console.log('no',doge1.style.top);
 		}
 	}
+}
+
+function classy(el,action) {
+	var classes = el.className.split(' ');
+	console.log(classes);
+	var classify = classes.join(' ');
+	console.log(classify);
 }
