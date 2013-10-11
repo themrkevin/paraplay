@@ -2,6 +2,7 @@ window.onscroll = function() {
 	bg('.background','top',0.2);
 	bg('.uniground','top',0.2);
 	doge();
+	lp();
 }
 function bg(el,direction,speed) {
 	var scrolled = window.pageYOffset,
@@ -31,6 +32,15 @@ function doge() {
 			removeClass(dogeB,'ohhai');
 			// console.log('no',doge1.style.top);
 		}
+	}
+}
+function lp() {
+	var lpSec = document.getElementById('lp'),
+		scrolled = window.pageYOffset,
+		lpTop = lpSec.offsetTop,
+		ninjaCorn = lpSec.querySelector('.unicorn-peak');
+	if(lpTop - scrolled > 10) {
+		ninjaCorn.style.top = -(lpTop - scrolled)+'px';
 	}
 }
 function addClass(el,name) {
