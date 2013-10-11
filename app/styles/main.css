@@ -63,14 +63,14 @@ body {
     max-width: 400px;
     position: absolute;
     left: 275px;
-    top: 225px;
+    top: 215px;
     -webkit-transition: all 1.0s ease-in-out;
     -moz-transition:    all 1.0s ease-in-out;
     -o-transition:      all 1.0s ease-in-out;
     transition:         all 1.0s ease-in-out;
 }
 .doge .dogeb.ohhai {
-    top: 200px;
+    top: 180px;
 }
 .doge .column {
     float: left;
