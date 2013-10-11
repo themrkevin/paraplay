@@ -1,8 +1,9 @@
 window.onscroll = function() {
-	paraplay('.background','top',0.2);
+	bg('.background','top',0.2);
+	bg('.uniground','top',0.2);
 	doge();
 }
-function paraplay(el,direction,speed) {
+function bg(el,direction,speed) {
 	var scrolled = window.pageYOffset,
 		element = document.querySelector(el);
 	element.style[direction] = -(scrolled*speed)+'px';
@@ -44,6 +45,7 @@ function removeClass(el,name) {
 		l = classes.length;
 	if(!classes.inArray(name)) return false;
 	classes.remove(classes.indexOf(name))
+	classes = classes.join(' ');
 	el.className = classes;
 }
 // Check if something is inside an array
